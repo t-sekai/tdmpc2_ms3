@@ -75,7 +75,7 @@ def launch_exps(template: str, dest: str, job_prefix: str):
                 
                 python train.py task={env} \
                 model_size=5 \
-                steps=500000 \
+                steps=8000000 \
                 seed={seed} \
                 exp_name=baseline \
                 wandb_project=tdmpc2_ms3 \
