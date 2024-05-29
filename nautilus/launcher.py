@@ -44,7 +44,7 @@ def launch_exps(template: str, dest: str, job_prefix: str):
     
     # 5th seed: 7050
     pgrid = {"seed": [4796, 2044, 8946, 9689],  
-        "env" : ['pick-cube'],}
+        "env" : ['peg-insertion-side'],}
           
     # demos=-1 means using all demos
     parameters = ParameterGrid(pgrid)
