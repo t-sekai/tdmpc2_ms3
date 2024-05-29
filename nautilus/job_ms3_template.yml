@@ -22,8 +22,8 @@ spec:
               cd /root
               pip install gymnasium
               pip install --upgrade mani_skill
-              git clone -b main https://github.com/t-sekai/tdmpc_ms3.git
-              cd tdmpc2/tdmpc2
+              git clone -b main https://github.com/t-sekai/tdmpc2_ms3.git
+              cd tdmpc2_ms3/tdmpc2
               wandb login $wandb_key$
               # run your command here
               $command$
@@ -44,6 +44,10 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
               - matchExpressions:
+                - key: nautilus.io/group
+                  operator: In
+                  values:
+                    - haosu
                 - key: nvidia.com/gpu.product
                   operator: In
                   values:
