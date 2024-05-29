@@ -5,6 +5,7 @@ tdmpc2/wandb/
 
 # HPC
 nautilus/**/*.yml
+nautilus/**/*.json
 !nautilus/job_*.yml
 *.key
 
